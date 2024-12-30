@@ -2538,6 +2538,15 @@ declare namespace Matter {
          */
         static stop(render: Render): void;
         /**
+         * Sets the render width and height.
+         * Updates the canvas accounting for render.options.pixelRatio.
+         * @method setSize
+         * @param {render} render
+         * @param {number} width
+         * @param {number} height
+         */
+        static setSize(render: Render, width: number, height: number): void;
+        /**
          * Sets the pixel ratio of the renderer and updates the canvas.
          * To automatically detect the correct ratio, pass the string `'auto'` for `pixelRatio`.
          * @method setPixelRatio
